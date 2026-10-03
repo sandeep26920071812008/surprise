@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Boyfriend Day My Love! ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #ffe6e8;
+      background-image: radial-gradient(#ffb3c1 1px, transparent 1px);
+      background-size: 20px 20px;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 400px; /* थोड़ा चौड़ा किया */
+      width: 100%;
+      border: 2px solid #ff4d6d;
+      position: relative;
+      overflow: hidden;
+      display: none;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    h1 { color: #ff4d6d; font-size: 24px; margin-bottom: 10px; }
+    p { color: #444; line-height: 1.6; font-size: 15px; }
+    .btn-container { 
+      margin-top: 25px; 
+      display: flex; 
+      justify-content: center; 
+      gap: 15px;
+      position: relative;
+      min-height: 50px;
+    }
+    button {
+      background-color: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+    }
+    button:hover { 
+      background-color: #c9184a; 
+      transform: translateY(-2px); 
+    }
+    .btn-no {
+      background-color: #a8a8a8;
+      box-shadow: none;
+    }
+    .btn-no:hover {
+      background-color: #888;
+    }
+    
+    /* छवियों (Pics/GIFs) के लिए स्टाइल */
+    .image-container {
+      width: 100%;
+      margin: 15px 0;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border: 3px solid #fff0f3;
+    }
+    .display-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    /* GIFs का छोटा साइज़ */
+    .gif-icon {
+      width: 60px;
+      height: auto;
+      margin: -10px auto 10px;
+      display: block;
+    }
+
+    .love-note {
+      background: #fff0f3;
+      padding: 15px;
+      border-radius: 12px;
+      border-left: 4px solid #ff4d6d;
+      text-align: left;
+      font-size: 14px;
+      color: #555;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PAGE 1: Question -->
+  <div id="page1" class="card active">
+    <h1>HAPPY BOYFRIEND DAY ❤️</h1>
+    
+    <!-- एक छोटा प्यारा GIF -->
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z2eDR2MnEwcjB6ZHZwbWN4bm1vbmx2YnRtNmJrd2o3Nmt6eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LpDmM2w9a45mgC40A2/giphy.gif" alt="Cute Bear" class="gif-icon">
+
+    <!-- ✅ आपकी पहली फोटो यहाँ आएगी! ✅ -->
+    <!-- 'src' में अपनी फोटो का सही नाम (एक्सटेंशन .jpg/.png के साथ) लिखें -->
+    <div class="image-container">
+      <img src="image1.jpg" alt="Our Special Moment" class="display-image">
+    </div>
+    
+    <p>Thank you for always being by my side, making me laugh, and taking care of me every single day!</p>
+    <p><b>Will you be my date today & forever? 🥰</b></p>
+    
+    <div class="btn-container">
+      <button onclick="goToNextPage()">YES! 💖</button>
+      <button id="noBtn" class="btn-no" onclick="handleNoClick()" onmouseover="moveNoButton()">NO 😜</button>
+    </div>
+  </div>
+
+  <!-- PAGE 2: Happy Response (After YES) -->
+  <div id="page2" class="card">
+    <h1>YAYYY! I LOVE YOU SO MUCH! 😘❤️</h1>
+    
+    <!-- एक और छोटा सेलिब्रेशन GIF -->
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3V4bmxyMnM0cTZicXdrcTlmNjJ5NXF6cjh0NWU0MGszYTNkczVvaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Yn4fJ1Gv0yV1Vq7P4G/giphy.gif" alt="Celebrating Cats" class="gif-icon">
+
+    <!-- ✅ आपकी दूसरी फोटो (या दोनों की साथ वाली) यहाँ आएगी! ✅ -->
+    <div class="image-container">
+      <img src="C:\Users\Nishu\OneDrive\Desktop\sanju - Copy" alt="Us Together" class="display-image">
+    </div>
+    
+    <p>I knew you'd say YES! You're stuck with me now forever! 😜✨</p>
+    
+    <div class="love-note">
+      <b>A Special Note For You:</b><br>
+      • You make my world a happier place.<br>
+      • Thank you for being the best boyfriend ever.<br>
+      • Get ready for a special treat today! 🍦🎁
+    </div>
+
+    <div style="margin-top:20px;">
+      <button onclick="alert('Sending you 100000 Virtual Hugs and Kisses! 💋🤗')">Claim Hugs & Kisses 🤗</button>
+    </div>
+  </div>
+
+  <script>
+    let noClickCount = 0;
+    const noResponses = [
+      "Are you sure? 🥺",
+      "Think again! 💭",
+      "Don't do this to me! 😭",
+      "Look at YES button! 😉",
+      "You can't say NO! ❤️"
+    ];
+
+    function goToNextPage() {
+      document.getElementById('page1').classList.remove('active');
+      document.getElementById('page2').classList.add('active');
+    }
+
+    function handleNoClick() {
+      const noBtn = document.getElementById('noBtn');
+      if (noClickCount < noResponses.length) {
+        noBtn.innerText = noResponses[noClickCount];
+        noClickCount++;
+      } else {
+        noBtn.style.display = 'none'; // 'NO' disappearing after a few tries
+      }
+    }
+
+    // Making the NO button playfully move away on mobile/hover
+    function moveNoButton() {
+      const noBtn = document.getElementById('noBtn');
+      const x = Math.random() * (window.innerWidth < 400 ? 50 : 100) - 25;
+      const y = Math.random() * 40 - 20;
+      noBtn.style.transform = `translate(${x}px, ${y}px)`;
+    }
+  </script>
+
+</body>
+</html>
